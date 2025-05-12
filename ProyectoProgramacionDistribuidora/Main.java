@@ -16,11 +16,13 @@ public class Main {
         System.out.println("Ingrese el nombre del empleado:");
         String nombre = scanner.nextLine();
 
-        System.out.println("Ingrese el puesto del empleado:");
-        String puesto = scanner.nextLine();
+        System.out.println("Ingrese el email del empleado:");
+        String email = scanner.nextLine();
 
-        // Ajusta el constructor según tu clase Empleado
-        Empleado empleado = new Empleado(id, nombre, puesto);
+        System.out.println("Ingrese el teléfono del empleado (8 dígitos):");
+        String telefono = scanner.nextLine();
+
+        Empleado empleado = new Empleado(id, nombre, email, telefono);
 
         planilla.agregarEmpleado(empleado);
 
